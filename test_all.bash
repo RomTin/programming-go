@@ -5,10 +5,8 @@ function exec () {
   cd $1
   # execute test.bash if exists
   if [ -f 'test.bash' ]; then
-    echo 'test.bash'
     bash test.bash
   else
-    echo 'command'
     go test -v
   fi
   cd $pwd
