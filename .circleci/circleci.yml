@@ -1,0 +1,9 @@
+version: 2
+jobs:
+  build:
+    working_directory: /go/src/github.com/RomTin/programming-go
+    docker:
+      - image: circleci/golang:1.9
+    steps:
+      - checkout
+      - run: bash ./test_all.bash
