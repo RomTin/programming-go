@@ -9,7 +9,7 @@ function exec () {
   else
     go test -v
   fi
-  cd $pwd
+  cd $cwd
 }
 
 dirs=`ls | egrep 'ch[0-9]{2}'`
