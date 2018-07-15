@@ -4,6 +4,6 @@ import (
 	"testing"
 )
 
-func TestMain(t *testing.T) {
+func TestFetch(t *testing.T) {
 	fetch("RomTin.github.io")
 }

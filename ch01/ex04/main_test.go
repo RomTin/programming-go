@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func TestMain(t *testing.T) {
+func TestCountLines(t *testing.T) {
 	counts := make(map[string]map[string]int)
 	files := [3]string{"./text/sample1.txt", "./text/sample2.txt", "./text/sample3.txt"}
 	for _, file := range files {

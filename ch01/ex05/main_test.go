@@ -8,7 +8,7 @@ import (
 	"image/gif"
 )
 
-func TestMain(t *testing.T) {
+func TestLissajous(t *testing.T) {
 	rand.Seed(time.Now().UTC().UnixNano())
 	gif_buffer := new(bytes.Buffer)
 	lissajous(gif_buffer)

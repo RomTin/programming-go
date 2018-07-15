@@ -9,7 +9,7 @@ import (
 	"image/color"
 )
 
-func TestMain(t *testing.T) {
+func TestLissajous(t *testing.T) {
 	rand.Seed(time.Now().UTC().UnixNano())
 	for i := 0; i < 100; i++ {
 		palette = append(palette, color.RGBA{uint8(rand.Int63() % 255), uint8(rand.Int63() % 255), uint8(rand.Int63() % 255), 0xFF})
