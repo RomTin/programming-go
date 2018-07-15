@@ -6,4 +6,5 @@ jobs:
       - image: circleci/golang:1.9
     steps:
       - checkout
+      - run: go get -u github.com/golang/dep/cmd/dep
       - run: bash ./test_all.bash
