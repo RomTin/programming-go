@@ -6,5 +6,16 @@ jobs:
       - image: circleci/golang:1.9
     steps:
       - checkout
-      - run: go get -u github.com/golang/dep/cmd/dep
-      - run: bash ./test_all.bash
+      - run: 
+          name: Package installation
+          command: |
+            go get -u github.com/golang/dep/cmd/dep
+            go get -u github.com/kyoh86/richgo
+      - run:
+          name: Command set up
+          command: |
+            echo 'alias go=richgo' >> $BASH_ENV
+            source /home/circleci/.bashrc
+      - run:
+          name: Execute
+          command: bash ./test_all.bash
