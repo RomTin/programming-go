@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/adonovan/gopl.io/ch4/github"
+	"../github"
 )
 
 func main() {
