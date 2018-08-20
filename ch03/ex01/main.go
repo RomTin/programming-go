@@ -17,7 +17,7 @@ const (
 var sin30, cos30 = math.Sin(angle), math.Cos(angle)
 
 func main() {
-	fmt.Printf("<svg xmlms='http://www.w3.org/2000/svg' "+
+	fmt.Printf("<svg xml='http://www.w3.org/2000/svg' "+
 		"style='stroke: grey; fill: white; stroke-width: 0.7' "+
 		"width='%d' height='%d'>", width, height)
 	for i := 0; i < cells; i++ {
